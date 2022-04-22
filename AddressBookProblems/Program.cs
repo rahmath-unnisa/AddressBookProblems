@@ -7,7 +7,7 @@ namespace AddressBookProblems
         {
             Console.WriteLine("Welcome To Adress Book Program");
             bool end = true;
-            Console.WriteLine("1. Add Contact\n2. Add Contact To Adress Book\n3. Edit A contact \n4. Delete A Contact \n5.End Program ");
+            Console.WriteLine("1. Add Contact\n2. Add Contact To Adress Book\n3. Edit A contact  \n4.Delete A Contact \n5. End Program ");
             Contact contact = new Contact();
             AddressBookMain addContact = new AddressBookMain();
             while (end)
