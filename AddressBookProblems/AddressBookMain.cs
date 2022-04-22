@@ -87,5 +87,19 @@ namespace AddressBookProblems
                 Display();
             }
         }
+        public void DeleteTheContact()
+        {
+            string name = Console.ReadLine();
+            Contact delete = new Contact();
+            foreach (var contact in addressBook)
+            {
+                if (contact.FirstName.Equals(name))
+                {
+                    delete = contact;
+                }
+            }
+            addressBook.Remove(delete);
+            Display();
+        }
     }
 }
