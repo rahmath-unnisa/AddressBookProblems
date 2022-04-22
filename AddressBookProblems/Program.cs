@@ -7,7 +7,7 @@ namespace AddressBookProblems
         {
             Console.WriteLine("Welcome To Adress Book Program");
             bool end = true;
-            Console.WriteLine("1. Add Contact\n2. Add Contact To Adress Book\n3. Edit A contact  \n4.Delete A Contact \n5. Add Data In Dictionary \n6.  End Program ");
+            Console.WriteLine("1. Add Contact\n2. Add Contact To Adress Book\n3. Edit A contact  \n4.Delete A Contact \n5. Add Data In Dictionary \n6. Editing The Dictionary \n7. End Program ");
             Contact contact = new Contact();
             AddressBookMain addContact = new AddressBookMain();
             while (end)
@@ -60,6 +60,11 @@ namespace AddressBookProblems
                         addContact.AddDictionary(dictionaryName); 
                         break;
                    case 6:
+                        Console.WriteLine("Enter the Name for Editing data in Dictionary ");
+                        string dictName = Console.ReadLine();
+                        string contactName = Console.ReadLine();
+                        addContact.EditingDictionary(dictName, contactName); break;
+                    case 7:
                         end = false;
                         break;
                     default:

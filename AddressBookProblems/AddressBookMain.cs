@@ -118,6 +118,18 @@ namespace AddressBookProblems
             Console.WriteLine(dictionaryName);
 
         }
+        public void EditingDictionary(string name, string contactName)
+        {
+            foreach (var data in dictionaryName)
+            {
+                if (dictionaryName.Keys.Equals(name))
+                {
+                    addressBook = data.Value;
+                }
+                EditContactInAddressBook(contactName);
+            }
+        }
+
         public bool NameExists(string name)
         {
             foreach (var data in dictionaryName.Keys)
@@ -129,6 +141,7 @@ namespace AddressBookProblems
             }
             return false;
         }
+       
 
     }
 }
