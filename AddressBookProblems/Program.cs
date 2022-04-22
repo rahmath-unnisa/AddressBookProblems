@@ -23,10 +23,10 @@ namespace AddressBookProblems
             contact.State = Console.ReadLine();
 
             Console.WriteLine("Enter Your Zip Code : ");
-            contact.Zip = Convert.ToInt32(Console.ReadLine());
+            contact.Zip =Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Enter Your Phone Number : ");
-            contact.PhoneNumber = Convert.ToInt32(Console.ReadLine());
+            contact.PhoneNumber = (int) Convert.ToInt64(Console.ReadLine());
 
             Console.WriteLine("Enter Your Email : ");
             contact.Email = Console.ReadLine();
